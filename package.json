@@ -1,6 +1,6 @@
 {
   "name": "pdf-lib-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "utilities for working with pdf-lib",
   "main": "index.js",
   "scripts": {
