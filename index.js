@@ -1,9 +1,11 @@
 import { Utility } from "./functions";
 
-export function drawRuler(page, axis, scaleInterval) {
-    const utility = new Utility().page(page)
+export function drawRuler(page, axis, scaleInterval, color) {
+    const utility = new Utility().setPage(page).build();
+    console.log(utility);
 
-    if (axis == 'x') utility.drawXRuler(scaleInterval);
-    if (axis == 'y') utility.drawYRuler(scaleInterval);
+    if (axis == 'x') utility.drawXRuler(scaleInterval, color);
+    if (axis == 'y') utility.drawYRuler(scaleInterval, color);
 
+    return true;
 }
